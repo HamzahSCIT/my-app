@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import TodosList from "./components/todosList";
+import TodosList from "./components/TodosList";
 import CreateList from "./components/createList";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         </nav>
         <br />
         <Routes>
-          <Route path="/" element={<TodosList />} />
+          <Route path="/" element={<TodosList description="bye" />} />
           <Route path="/create" element={<CreateList />} />
           {/* <Route path="/edit/:id" component={EditTodo} /> */}
         </Routes>
